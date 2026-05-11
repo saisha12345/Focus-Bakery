@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Bakery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="bakery-app">
+    <section class="hero">
+      <p class="eyebrow">AI Focus Companion</p>
+      <h1>Focus Bakery</h1>
+      <p>Complete focus rounds, collect ingredients, bake cute treats, and grow your tiny productivity shop.</p>
+    </section>
+
+    <section class="workspace">
+      <section class="timer-card">
+        <div class="shop-window" aria-live="polite">
+          <div class="ingredient" id="ingredientIcon">🥚</div>
+          <p class="stage" id="stageLabel">Round 1 ingredient: egg</p>
+        </div>
+
+        <div class="time" id="time">25:00</div>
+        <p class="helper" id="helperText">Start a focus round to collect your first ingredient.</p>
+
+        <div class="timer-actions">
+          <button id="start">Start</button>
+          <button id="pause">Pause</button>
+          <button id="reset">Reset</button>
+          <button id="complete">Complete round</button>
+        </div>
+      </section>
+
+      <section class="recipe-card">
+        <p class="eyebrow">Current recipe</p>
+        <h2 id="recipeName">Chocolate Cloud Cake</h2>
+        <div class="recipe-steps" id="recipeSteps"></div>
+
+        <label for="focusNote">What did you work on this round?</label>
+        <textarea id="focusNote" placeholder="Example: I polished my Meta portfolio project and updated my resume bullets."></textarea>
+        <button id="addReflection" class="secondary">Add AI-style bakery note</button>
+        <p class="reflection" id="reflectionText">Your bakery note will appear here after a focus round.</p>
+      </section>
+    </section>
+
+    <section class="shop-section">
+      <div class="shop-heading">
+        <div>
+          <p class="eyebrow">Your tiny shop</p>
+          <h2>Bakery collection</h2>
+        </div>
+        <button id="clearShop" class="clear">Clear shop</button>
+      </div>
+      <div class="collection" id="collection"></div>
+    </section>
+
+    <section class="design-note">
+      <p class="eyebrow">Prototype rationale</p>
+      <p>
+        Focus Bakery explores how AI-assisted reflection, playful rewards, and a repeatable progression system can make productivity feel warmer and more motivating without turning focus into pressure.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
